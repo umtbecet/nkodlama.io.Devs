@@ -21,6 +21,7 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\corePackages\Core.Application\Core.Application.csproj" />
 		<ProjectReference Include="..\Persistence\Persistence.csproj" />
 	</ItemGroup>
 

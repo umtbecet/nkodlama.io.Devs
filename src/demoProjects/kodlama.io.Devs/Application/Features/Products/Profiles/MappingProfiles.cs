@@ -1,6 +1,8 @@
 ﻿using Application.Features.Products.Commands.CreateProduct;
 using Application.Features.Products.Dtos;
+using Application.Features.Products.Models;
 using AutoMapper;
+using Core.Persistence.Paging;
 using Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,8 @@ namespace Application.Features.Products.Profiles
         {
             CreateMap<Product, CreatedProductDto>().ReverseMap();
             CreateMap<Product, CreateProductCommand>().ReverseMap();
+            CreateMap<IPaginate<Product>, ProductListModel>().ReverseMap();
+            CreateMap<Product,ProductListDto>().ReverseMap();
         }
     }
 }
