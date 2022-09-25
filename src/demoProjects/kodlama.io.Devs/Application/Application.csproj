@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Models\" />
+    <Folder Include="Features\Models\Commands\" />
+    <Folder Include="Features\Models\Constants\" />
+    <Folder Include="Features\Models\Rules\" />
     <Folder Include="Features\Products\Constants\" />
   </ItemGroup>
 	
