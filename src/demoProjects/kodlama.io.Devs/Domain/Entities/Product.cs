@@ -10,6 +10,7 @@ namespace Domain.Entities
     public class Product : Entity
     {
         public string Name { get; set; }
+        public virtual ICollection<Model> Models { get; set; }
 
         public Product()
         {
