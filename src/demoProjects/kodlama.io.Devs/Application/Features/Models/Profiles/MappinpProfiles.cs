@@ -1,4 +1,5 @@
 ﻿using Application.Features.Models.Dtos;
+using Application.Features.Models.Models;
 using AutoMapper;
 using Core.Persistence.Paging;
 using Domain.Entities;
@@ -14,8 +15,8 @@ namespace Application.Features.Models.Profiles
     {
         public MappinpProfiles()
         {
-            CreateMap<Model, ModelListDto>().ForMember(c=>c.ProductName, opt=>opt.MapFrom(c=>c.Product.Name)).ReverseMap();
-            CreateMap<IPaginate<Model>, ModelListDto>().ReverseMap();
+            CreateMap<Model, ModelListDto>().ForMember(c => c.ProductName, opt => opt.MapFrom(c => c.Product.Name)).ReverseMap();
+            CreateMap<IPaginate<Model>, ModelListModel>().ReverseMap();
         }
     }
 }
